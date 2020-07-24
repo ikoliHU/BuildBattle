@@ -1,0 +1,83 @@
+#
+#      Build Battle Achievements
+#         Configuration section
+#
+
+Achievement-Messages:
+  Achievement-Command:
+    Help: "&6----------------{BuildBattle Achievements commands}----------\n&b/bbach list: &7Shows achievements list!\n&b/bbach reload: &7Reload achievements config!\n&6-------------------------------------------------"
+    Inventory-Name: "&aAchievements"
+    Unlocked-Achievement: "&a&lUNLOCKED"
+    Locked-Achievement: "&c&lLOCKED"
+  Achievement-Get:
+    # Should message be centered using internal class?
+    Centered: true
+    Message:
+      - "&8&m==================================="
+      - "&6&lAchievement get!"
+      - "&a&l%achievement%"
+      - "&8&m==================================="
+
+# Set this section to "Achievements: []" to disable it completely
+Achievements:
+  # Achievement ID
+  Killer1:
+    # Name of achievement visible in game
+    Name: "&cBlock Placed I"
+
+    # Description of achievement visible in game
+    # Use ';' to move text to next line
+    # Use %progress% placeholder to add current progress of achievement
+    # if current progress is above Objective-Amount it will set it to Objective-Amount
+    Description: "&7Place 250 blocks!;&7Progress: &e%progress%/250"
+
+    # Material displayed in GUI when achievement is unlocked
+    Unlocked-Material: "EMERALD"
+
+    # Material displayed in GUI when achievement is locked
+    Locked-Material: "COAL"
+
+    # Achievement objective. Valid objectives:
+    #  WINS - when player win for x time
+    #  LOSES - when player lose for x time
+    #  GAMES_PLAYED - when x amount of games are played
+    #    GAMES_PLAYED will be called ONLY when player leave arena! It's plugin's API limitation
+    #  BLOCKS_BROKEN - when player break x amount of blocks
+    #  BLOCKS_PLACED - when player place x amount of blocks
+    Objective: BLOCKS_PLACED
+
+    # Amount of objective points player need to have to get this achievement.
+    # Players can have this OR MORE amount of points to get this achievement.
+    Objective-Amount: 250
+
+    # Command rewards executed from console after achievement is unlocked
+    #
+    #                    Placeholders list:
+    #             %player% - Current player name
+    #             %theme% - Current arena theme
+    #             %mapname% - Name of map
+    #             %arena-id% - Arena Identifier
+    #             %playeramount% - Number of players in game
+    #
+    #        Commands are executed by default BY CONSOLE, use "p:" to preform command by player
+    #  You can use chance to execute command adding "chance(NUMBER):" (ex chance(10):) at the beginning of command
+    #
+    #  Commands examples:
+    #    - p:say New achievement, yeah!                 # Player will say "New achievement, yeah!"
+    #    - bc %player% unlocked achievement Killer!     # Will broadcast "<player name> unlocked achievement Killer" message
+    #    - chance(1):p:say I was very lucky!            # Player has 1% chance to say "I was very lucky!"
+    #    - p:chance(99):spawn                           # Player has 99% chance to teleport to spawn
+    #       ^ YOU CAN EVEN SWAP CHANCE WITH PLAYER!
+    #    - chance(50):eco give %PLAYER% 10              # Console has 10% chance to give player 10$
+    Reward:
+      - eco give %player% 10
+      - p:say I got new achievement!!!
+  Newbie:
+    Name: "&eNewbie!"
+    Description: "&7Play Build Battle game 2 times!;&7Progress: &e%progress%/2"
+    Unlocked-Material: "EMERALD"
+    Locked-Material: "COAL"
+    Objective: GAMES_PLAYED
+    Objective-Amount: 2
+    Reward:
+      - eco give %player% 15

@@ -1,0 +1,22 @@
+# Should replay notifier be enabled?
+# REMEMBER to add buildbattle.join.* permission to allow access to all random arenas!
+Enabled: true
+
+# Replay message sent to all players in arena
+Replay-Message: "&aGame has ended! &eWant to play again? &b&lClick here!"
+
+# Message when hover Replay-Message
+Replay-Message-Hover: "&eClick to play again!"
+
+# Replay action when player click Replay-Message. Available actions:
+#   RANDOM - join random arena (if not full)
+#   RANDOM_WAITING - join random arena which state is waiting for players or starting
+Replay-Action: RANDOM
+
+# Plugin will automatically hook with these configured servers if bungee mode is activated in main
+# Build Battle plugin
+#
+# Type here Build Battle server names that are hooked to Bungee Cord
+Bungee-Server-Names:
+  - "BB01"
+

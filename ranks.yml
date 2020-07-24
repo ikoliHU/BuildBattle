@@ -1,0 +1,66 @@
+#
+#         Build Battle Ranks
+#       Configuration section
+#
+
+Ranks:
+  # Should custom ranks be enabled?
+  Enabled: true
+  # Should ranks be formatted in global chat?
+  Global-Chat: false
+  List:
+    Rookie:
+      # Statistic to check for, if player has x wins and higher his messages in game will be formatted like that
+      # Valid Statistic Types:
+      # - WINS           - LOSES
+      # - GAMES_PLAYED   - BLOCKS_PLACED
+      # - BLOCKS_BROKEN  - PARTICLES_USED
+      Statistic: WINS
+      # Minimum amount of statistic needed to format user message into this one
+      Amount-Needed: 0
+      # Message formatting. Placeholders: %player% - player name, %message% - player message
+      Format: "&fRookie &7%player%: %message%"
+    Untrained:
+      Statistic: WINS
+      Amount-Needed: 5
+      Format: "&8Untrained &7%player%: %message%"
+    Amateur:
+      Statistic: WINS
+      Amount-Needed: 20
+      Format: "&eAmateur &7%player%: %message%"
+    Apprentice:
+      Statistic: WINS
+      Amount-Needed: 50
+      Format: "&aApprentice &7%player%: %message%"
+    Experienced:
+      Statistic: WINS
+      Amount-Needed: 75
+      Format: "&dExperienced &7%player%: %message%"
+    Seasoned:
+      Statistic: WINS
+      Amount-Needed: 100
+      Format: "&9Seasoned &7%player%: %message%"
+    Trained:
+      Statistic: WINS
+      Amount-Needed: 120
+      Format: "&2Trained &7%player%: %message%"
+    Skilled:
+      Statistic: WINS
+      Amount-Needed: 150
+      Format: "&bSkilled &7%player%: %message%"
+    Talented:
+      Statistic: WINS
+      Amount-Needed: 200
+      Format: "&cTalented &7%player%: %message%"
+    Professional:
+      Statistic: WINS
+      Amount-Needed: 260
+      Format: "&5Professional &7%player%: %message%"
+    Expert:
+      Statistic: WINS
+      Amount-Needed: 350
+      Format: "&1Expert &7%player%: %message%"
+    Master:
+      Statistic: WINS
+      Amount-Needed: 450
+      Format: "&4Master &7%player%: %message%"

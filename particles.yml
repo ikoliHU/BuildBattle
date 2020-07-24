@@ -3,7 +3,7 @@
 EXPLOSION_NORMAL:
   displayname: '&6Normál Robbanás'
   lore:
-  - '&7Click to activate'
+  - '&eBal klikk &6» &7Aktiválás'
   - '&7on your location'
   material-name: SNOWBALL
   permission: particles.VIP

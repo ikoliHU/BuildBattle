@@ -64,11 +64,11 @@ Bossbar:
   Vote-Time-Left: "&e&lVote time left: &f&e%time%"
 
 Scoreboard:
-  Title: "&b&lBuildBattle"
+  Title: "&4[&6BuildBattle&4]"
   Theme-Unknown: "&c???"
   GTB-Current-Timer:
     Build-Time: "&fIdő: &e%FORMATTED_TIME_LEFT%"
-    Starts-In: "&fIndul: &e%FORMATTED_TIME_LEFT%"
+    Starts-In: "&aIndul: &e%FORMATTED_TIME_LEFT%"
   Content:
     Playing-States:
       Classic:
@@ -81,6 +81,8 @@ Scoreboard:
         - "&fAréna: &e%ARENA_ID%"
         - ""
         - "&6www.fyremc.hu"
+        
+        - "&7%server_time_yyyy/MM/dd | HH:mm%"
       Teams:
         - "&7Duo mód"
         - "&fHátralévő idő: &e%FORMATTED_TIME_LEFT%"
@@ -93,6 +95,8 @@ Scoreboard:
         - "&e%TEAMMATE%"
         - ""
         - "&6www.fyremc.hu"
+        
+        - "&7%server_time_yyyy/MM/dd | HH:mm%"
       Guess-The-Build:
         - "&7Találd ki az építményt"
         - "&fÉpítő:"
@@ -109,6 +113,8 @@ Scoreboard:
         - "&c%THEME%"
         - ""
         - "&6www.fyremc.hu"
+        
+        - "&7%server_time_yyyy/MM/dd | HH:mm%"
     Starting:
       - "&fJátékosok: &e%PLAYERS%"
       - ""
@@ -117,16 +123,22 @@ Scoreboard:
       - "&fIndul: &e%TIMER%"
       - ""
       - "&6www.fyremc.hu"
+      
+      - "&7%server_time_yyyy/MM/dd | HH:mm%"
     Ending-States:
       Classic:
         - "&c&lJÁTÉK VÉGE"
         - ""
         - "&6www.fyremc.hu"
+        
+        - "&7%server_time_yyyy/MM/dd | HH:mm%"
       Teams:
         - "&7Duo mód"
         - "&c&lJÁTÉK VÉGE"
         - ""
         - "&6www.fyremc.hu"
+        
+        - "&7%server_time_yyyy/MM/dd | HH:mm%"
       Guess-The-Build:
         - "&7Guess The Build Mode"
         - ""
@@ -142,64 +154,68 @@ Scoreboard:
         - "&e10. &f%10%: &e%10_PTS%"
         - ""
         - "&6www.fyremc.hu"
+        
+        - "&7%server_time_yyyy/MM/dd | HH:mm%"
     Waiting:
-      - "&fPlayers: &e%PLAYERS%"
+      - "&fJátékosok: &e%PLAYERS%"
       - ""
-      - "&fPlayers Needed: &e%MIN_PLAYERS%"
+      - "&fSzükséges Játékosok: &e%MIN_PLAYERS%"
       - ""
       - "&6www.fyremc.hu"
+      
+      - "&7%server_time_yyyy/MM/dd | HH:mm%"
 
 In-Game:
-  Plugin-Prefix: "&6[&bBuildBattle&6] "
-  Only-Command-Ingame-Is-Leave: "&cYou have to leave the game first to perform commands. The only command that works is /bb leave!"
-  Max-Entities-Limit-Reached: "&cYou can't spawn more entities!"
-  Max-Particles-Limit-Reached: "&cYou can't spawn more particles!"
-  No-Permission-For-Particle: "&cYou don't have permission for this particle!"
-  No-Permission-For-Biome: "&cYou don't have permission for this biome!"
-  Particle-Added: "&aParticle successfully added!"
-  Join-No-Permission: "&cYou don't have &6%permission% &cpermission to join this arena!"
-  Full-Game-No-Permission: "&cYou don't have the permission to join full games!"
-  No-Slots-For-Premium: "&cThis game is already full of premium players! Sorry"
-  Arena-Not-Configured: "&cArena is not configured yet! Contact staff!"
+  Plugin-Prefix: "&4[&6BuildBattle&4] "
+  Only-Command-Ingame-Is-Leave: "&cA parancsok használatához el kell hagynod az arénát a /bb leave paranccsal!"
+  Max-Entities-Limit-Reached: "&cNem hozhatsz létre több entitást!"
+  Max-Particles-Limit-Reached: "&cNem hozhatsz létre több animációt!"
+  No-Permission-For-Particle: "&cNincs jogod ehhez az animációhoz!"
+  No-Permission-For-Biome: "&cNincs jogod ehhez a biomhoz!"
+  Particle-Added: "&aSikeresen aktiváltad az animációt!"
+  Join-No-Permission: "&cNincs jogod &6%permission% &cbelépni ebbe az arénába!"
+  Full-Game-No-Permission: "&cNincs jogod csatlakozni tele lévő arénába!"
+  No-Slots-For-Premium: "&cAz aréna tele van prémium játékosokkal!"
+  Arena-Not-Configured: "&cVedd fel a kapcsolatot egy Adminnal!"
   # Join cancelled via external plugin that uses BuildBattle API.
-  Join-Cancelled-Via-API: "&cYou can't join this game!"
-  Join-As-Party-Member: "&cYou joined %ARENANAME% because the party leader joined it!"
-  Nobody: "&eNobody"
-  No-Theme-Yet: "&cVoting"
+  Join-Cancelled-Via-API: "&cNem tudsz csatlakozni ehhez az arénához!"
+  Join-As-Party-Member: "&cCsatlakoztatott a party főnök ebbe az arénába: %ARENANAME%!"
+  Nobody: "&eSenki"
+  No-Theme-Yet: "&cSzavazás"
   Guess-The-Build:
-    Current-Builder: "&eBuilder: &7%BUILDER%"
-    Current-Round: "&eRound: &7%ROUND%/%MAXPLAYERS%"
-    Theme-Is-Long: "&eThe theme is &7%NUM% &echaracters long"
-    Theme-Is-Name: "&eThe theme is a &e%THEME%"
-    Theme-Was-Name: "&eThe theme was: &a%THEME%&e!"
-    Theme-Was-Title: "&eThe theme was"
+    Current-Builder: "&eÉpítő: &7%BUILDER%"
+    Current-Round: "&eKör: &7%ROUND%/%MAXPLAYERS%"
+    Theme-Is-Long: "&eA téma &7%NUM% &ekarakter hosszú"
+    Theme-Is-Name: "&eTéma: &e%THEME%"
+    Theme-Was-Name: "&eA téma ez volt: &a%THEME%&e!"
+    Theme-Was-Title: "&eTéma:"
     Theme-Was-Subtitle: "&a%THEME%!"
-    Theme-Being-Selected: "&eTheme is being selected..."
-    Start-Guessing-Title: "&eStart Guessing!"
-    Plus-Points: "&a+%pts% points!"
+    Theme-Being-Selected: "&eA téma kiválasztása..."
+    Start-Guessing-Title: "&eTaláld ki a témát!"
+    Plus-Points: "&a+%pts% pont!"
     Chat:
-      Guessed-The-Theme: "&7%player% &ecorrectly guessed the theme!"
-      Cant-Talk-When-Guessed: "&cYou can't talk if you already guessed!"
-      Cant-Talk-When-Building: "&cYou can't talk when you're building!"
+      Guessed-The-Theme: "&7%player% &ekitalálta a témát!"
+      Cant-Talk-When-Guessed: "&cNem tudsz írni, ha már kitaláltad a témát!"
+      Cant-Talk-When-Building: "&cNem tudsz írni, mivel te építesz!"
   NPC:
     Floor-Change-NPC-Name: "&aChange floor NPC"
     NPC-Created: "&aFloor NPC created successfully!"
     Install-Citizens: "&cPlease install Citizens plugin first to create NPC's!"
   Messages:
-    Time-Left-Subtitle: "&c%FORMATTEDTIME% seconds left"
-    Time-Left-To-Build: "&6%FORMATTEDTIME% &7time left to build!"
-    Plot-Leave-Error: "&cYou can't fly out of the plot!"
-    Already-Playing: "&cYou're playing already!"
-    Cant-Fly-Outside-Plot: "&cYou can't fly outside your plot!"
-    Join: "&b%PLAYER%&7 joined the game (%PLAYERSIZE%/%MAXPLAYERS%)!"
-    Leave: "&b%PLAYER% &7left the game (%PLAYERSIZE%/%MAXPLAYERS%)!"
+    Time-Left-Subtitle: "&c%FORMATTEDTIME% másodperc van hátra!"
+    Time-Left-To-Build: "&6%FORMATTEDTIME% &7idő van hátra!"
+    Plot-Leave-Error: "&cNem hagyhatod el a területed!"
+    Already-Playing: "&cMár játékban vagy!"
+    Cant-Fly-Outside-Plot: "&cNem hagyhatod el a területed!"
+    Join: "&2%PLAYER% &acsatlakozott az várólistához (%PLAYERSIZE%/%MAXPLAYERS%)!"
+    Leave: "&4%PLAYER% &clecsatlakozott a várólistáról (%PLAYERSIZE%/%MAXPLAYERS%)!"
     Lobby-Messages:
-      Waiting-For-Players: "&7Waiting for players... We need at least &b%MINPLAYERS%&7 players to start."
-      Enough-Players-To-Start: "&7We now have enough players. The game is starting soon!"
-      Not-Enough-Space-For-Party: "&cYour party is bigger than free places on the arena %ARENANAME%"
-      Game-Started: "&7The game has started! Build best you can!"
-      Kicked-For-Premium-Slot: "&c%PLAYER% got removed from the game to make a place for premium players!"
-      You-Were-Kicked-For-Premium-Slot: "&cYou got kicked out of the game to make a place for a premium player!"
+      Waiting-For-Players: "&fVárakozás a többi játékosra... Legalább &6%MINPLAYERS%&7 játékos szükséges."
+      Enough-Players-To-Start: "&7Az aréna hamarosan indul!"
+      Not-Enough-Space-For-Party: "&cA party-ba több ember van mint amennyi szabad hely ebben az az arénába, ahova csatlakozni próbáltál: %ARENANAME%"
+      Game-Started: "&7Az aréna elindult! Építs a meghatározott időn belül"
+      Kicked-For-Premium-Slot: "&c%PLAYER% eltávolították az arénából, hogy legyen helye a prémium játékosoknak!"
+      You-Were-Kicked-For-Premium-Slot: "&cKi lettél rúgva az arénából, hogy legyen hely a prémium játékosoknak!"
     Voting-Messages:
       Plot-Owner-Title: "&aPlot owner: &7%player%"
       Voting-For-Player-Plot: "&7Now voting for &e&l%PLAYER%'s &7plot!"

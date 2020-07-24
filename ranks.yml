@@ -19,48 +19,48 @@ Ranks:
       # Minimum amount of statistic needed to format user message into this one
       Amount-Needed: 0
       # Message formatting. Placeholders: %player% - player name, %message% - player message
-      Format: "&fRookie &7%player%: %message%"
+      Format: "&fÚjonc &7%player%: %message%"
     Untrained:
       Statistic: WINS
       Amount-Needed: 5
-      Format: "&8Untrained &7%player%: %message%"
+      Format: "&8Képzetlen &7%player%: %message%"
     Amateur:
       Statistic: WINS
-      Amount-Needed: 20
-      Format: "&eAmateur &7%player%: %message%"
+      Amount-Needed: 30
+      Format: "&eAmatőr &7%player%: %message%"
     Apprentice:
       Statistic: WINS
-      Amount-Needed: 50
-      Format: "&aApprentice &7%player%: %message%"
+      Amount-Needed: 60
+      Format: "&aTanonc &7%player%: %message%"
     Experienced:
       Statistic: WINS
-      Amount-Needed: 75
-      Format: "&dExperienced &7%player%: %message%"
+      Amount-Needed: 85
+      Format: "&dTapasztalt &7%player%: %message%"
     Seasoned:
       Statistic: WINS
-      Amount-Needed: 100
-      Format: "&9Seasoned &7%player%: %message%"
+      Amount-Needed: 110
+      Format: "&9Szezonális &7%player%: %message%"
     Trained:
       Statistic: WINS
-      Amount-Needed: 120
-      Format: "&2Trained &7%player%: %message%"
+      Amount-Needed: 130
+      Format: "&2Képzett &7%player%: %message%"
     Skilled:
       Statistic: WINS
-      Amount-Needed: 150
-      Format: "&bSkilled &7%player%: %message%"
+      Amount-Needed: 160
+      Format: "&bSzakképzett &7%player%: %message%"
     Talented:
       Statistic: WINS
-      Amount-Needed: 200
-      Format: "&cTalented &7%player%: %message%"
+      Amount-Needed: 210
+      Format: "&cTehetség &7%player%: %message%"
     Professional:
       Statistic: WINS
-      Amount-Needed: 260
-      Format: "&5Professional &7%player%: %message%"
+      Amount-Needed: 270
+      Format: "&5Professzionális &7%player%: %message%"
     Expert:
       Statistic: WINS
-      Amount-Needed: 350
-      Format: "&1Expert &7%player%: %message%"
+      Amount-Needed: 360
+      Format: "&1Szakértő &7%player%: %message%"
     Master:
       Statistic: WINS
-      Amount-Needed: 450
-      Format: "&4Master &7%player%: %message%"
+      Amount-Needed: 460
+      Format: "&4Mester &7%player%: %message%"

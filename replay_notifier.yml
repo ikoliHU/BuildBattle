@@ -3,10 +3,10 @@
 Enabled: true
 
 # Replay message sent to all players in arena
-Replay-Message: "&aGame has ended! &eWant to play again? &b&lClick here!"
+Replay-Message: "&aA játék végetért! &eSzeretnél újra játszani? &b&lKattints ide!"
 
 # Message when hover Replay-Message
-Replay-Message-Hover: "&eClick to play again!"
+Replay-Message-Hover: "&eVisszajátszás!"
 
 # Replay action when player click Replay-Message. Available actions:
 #   RANDOM - join random arena (if not full)

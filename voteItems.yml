@@ -5,30 +5,30 @@
 
 '0':
   material-name: YELLOW_TERRACOTTA
-  displayname: '&4&lSUPER POOP'
+  displayname: '&4&lNagyon rossz'
   sound: ENTITY_CAT_PURREOW
 '1':
   material-name: TERRACOTTA
-  displayname: '&c&lPOOP'
+  displayname: '&c&lRossz'
   sound: ENTITY_CAT_PURREOW
 '2':
   material-name: LIME_TERRACOTTA
-  displayname: '&a&lOK'
+  displayname: '&a&lNem rossz'
   sound: ENTITY_CAT_PURREOW
 '3':
   material-name: GREEN_TERRACOTTA
-  displayname: '&2&lGOOD'
+  displayname: '&2&lJó'
   sound: ENTITY_CAT_PURREOW
 '4':
   material-name: BLUE_TERRACOTTA
-  displayname: '&5&lEPIC'
+  displayname: '&5&lEpikus'
   sound: ENTITY_CAT_PURREOW
 '5':
   material-name: YELLOW_TERRACOTTA
-  displayname: '&6&lLEGENDARY'
+  displayname: '&6&lLegendás'
   sound: ENTITY_CAT_PURREOW
 '8':
   material-name: BOOK
-  displayname: '&c&lReport Building'
+  displayname: '&c&lÉpítmény jelentése'
   report-item-function: true
   sound: UI_BUTTON_CLICK

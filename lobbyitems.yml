@@ -3,8 +3,7 @@
 # 
 # Do not rename 'Leave' name as it's hard coded in game!
 Leave:
-  displayname: '&c&lReturn to Lobby &7(Right Click)'
+  displayname: '&eBal klikk &6» &7Kilépés'
   lore:
-  - '&7Right-click to leave to the lobby'
-  material-name: BED
+  material-name: BARRIER
   slot: 8

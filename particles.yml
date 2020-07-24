@@ -10,7 +10,7 @@ EXPLOSION_NORMAL:
 EXPLOSION_LARGE:
   displayname: '&6Explosion Large'
   lore:
-  - '&7Click to activate'
+  - '&7kATT'
   - '&7on your location'
   material-name: SNOWBALL
   permission: particles.VIP

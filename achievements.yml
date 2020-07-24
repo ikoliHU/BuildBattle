@@ -6,15 +6,15 @@
 Achievement-Messages:
   Achievement-Command:
     Help: "&6----------------{BuildBattle Achievements commands}----------\n&b/bbach list: &7Shows achievements list!\n&b/bbach reload: &7Reload achievements config!\n&6-------------------------------------------------"
-    Inventory-Name: "&aAchievements"
-    Unlocked-Achievement: "&a&lUNLOCKED"
-    Locked-Achievement: "&c&lLOCKED"
+    Inventory-Name: "&aMérföldkövek"
+    Unlocked-Achievement: "&a&lFELOLDVA"
+    Locked-Achievement: "&c&lLEZÁRVA"
   Achievement-Get:
     # Should message be centered using internal class?
     Centered: true
     Message:
       - "&8&m==================================="
-      - "&6&lAchievement get!"
+      - "&6&lSzereztél egy mérföld követ!"
       - "&a&l%achievement%"
       - "&8&m==================================="
 
@@ -23,13 +23,13 @@ Achievements:
   # Achievement ID
   Killer1:
     # Name of achievement visible in game
-    Name: "&cBlock Placed I"
+    Name: "&cElhelyezett Blokkok I"
 
     # Description of achievement visible in game
     # Use ';' to move text to next line
     # Use %progress% placeholder to add current progress of achievement
     # if current progress is above Objective-Amount it will set it to Objective-Amount
-    Description: "&7Place 250 blocks!;&7Progress: &e%progress%/250"
+    Description: "&7Rakj le 250 blokkot!;&7Haladás: &e%progress%/250"
 
     # Material displayed in GUI when achievement is unlocked
     Unlocked-Material: "EMERALD"
@@ -70,14 +70,11 @@ Achievements:
     #       ^ YOU CAN EVEN SWAP CHANCE WITH PLAYER!
     #    - chance(50):eco give %PLAYER% 10              # Console has 10% chance to give player 10$
     Reward:
-      - eco give %player% 10
-      - p:say I got new achievement!!!
   Newbie:
-    Name: "&eNewbie!"
-    Description: "&7Play Build Battle game 2 times!;&7Progress: &e%progress%/2"
+    Name: "&eÚjonc!"
+    Description: "&7Játsz 2 BuildBattle játékot!;&7Haladás: &e%progress%/2"
     Unlocked-Material: "EMERALD"
     Locked-Material: "COAL"
     Objective: GAMES_PLAYED
     Objective-Amount: 2
     Reward:
-      - eco give %player% 15

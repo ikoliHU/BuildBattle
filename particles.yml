@@ -1,7 +1,7 @@
 # Items from particles menu
 
 EXPLOSION_NORMAL:
-  displayname: '&6Explosion Normal'
+  displayname: '&6Normál Robbanás'
   lore:
   - '&7Click to activate'
   - '&7on your location'

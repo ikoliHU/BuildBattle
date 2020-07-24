@@ -3,7 +3,7 @@
 # 
 # Do not rename 'Leave' name as it's hard coded in game!
 Leave:
-  displayname: '&eBal klikk &6» &7Kilépés'
+  displayname: '&eJobb klikk &6» &7Kilépés'
   lore:
   material-name: BARRIER
   slot: 8
